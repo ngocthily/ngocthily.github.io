@@ -1,0 +1,22 @@
+.splash {
+    font-family: 'Archivo Black';
+    font-size: 60px;
+    background-color: #EAD8FF;
+    min-height: 600px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.splash-description {
+    padding: 40px;
+}
+
+.splash-location {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: flex-end;
+}

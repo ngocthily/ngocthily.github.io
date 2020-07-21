@@ -1,0 +1,80 @@
+.projects {
+    min-height: 750px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.projects-header {
+    font-family: 'Archivo Black';
+    font-size: 50px;
+    padding: 10px;
+    border-bottom: 5px solid black;
+}
+
+.project1-2-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.project1-container,
+.project2-container,
+.project3-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.project3-container {
+    justify-content: center;
+}
+
+.project1,
+.project2,
+.project3 {
+    background-color: #EAD8FF;
+    min-width: 500px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.project3 {
+    min-width: 700px;
+}
+
+.project1-description-tech-container,
+.project2-description-tech-container,
+.project3-description-tech-container {
+    padding: 10px;
+    font-family: 'Archivo';
+}
+
+.project1-description,
+.project2-description,
+.project3-description {
+    font-size: 18px;
+}
+
+.project1-tech,
+.project2-tech,
+.project3-tech {
+    font-size: 14px;
+}
+
+.git-img {
+    width: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.project1-name,
+.project2-name,
+.project3-name  {
+    font-family: 'Archivo Black';
+    font-size: 30px;
+    padding: 10px;
+}
