@@ -101,6 +101,11 @@ function App() {
       <div className="splash-container">
         <Splash/>
       </div>
+      <div className="projects-header-container">
+        <div className="projects-header">
+          Projects
+        </div>
+      </div>
       <div className="projects-container">
         <Projects/>
       </div>

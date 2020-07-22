@@ -10,11 +10,6 @@ function Projects() {
     return (
     <div>
         <div className="projects">
-            <div className="projects-header-container">
-                <div className="projects-header">
-                    Projects
-                </div>
-            </div>
             <div className="project1-2-container">
                 <div className="project1-container">
                     <a className="git-img-link" href="https://github.com/ngocthily/Proofs-Line" target="_blank">

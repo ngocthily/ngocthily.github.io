@@ -1,5 +1,6 @@
 .App {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .splash-container {
@@ -9,6 +10,18 @@
 .projects-container {
     display: flex;
     justify-content: center;
+}
+
+.projects-header-container {
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.projects-header {
+    font-family: 'Archivo Black';
+    font-size: 50px;
+    padding-left: 50px;
 }
 
 .navbar-container {
