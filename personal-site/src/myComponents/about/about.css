@@ -1,0 +1,59 @@
+.about-top-border {
+    border-top: 5px solid black;
+    max-width: 1320px;
+    margin: auto;
+}
+
+.about-top {
+    font-family: 'Archivo Black';
+    font-size: 60px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.about-top1,
+.about-top2,
+.about-top3,
+.about-top4,
+.about-top5 {
+    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.resume-link {
+    text-decoration-color: black;
+    display: block;
+    width: fit-content;
+}
+
+.about-top6 {
+    font-size: 20px;
+    color: black;
+    padding-left: 10px;
+}
+
+.about-bottom {
+    font-family: 'Archivo Black';
+    font-size: 46px;
+    padding: 50px;
+    text-align: right;
+}
+
+.about-bottom1,
+.about-bottom2,
+.about-bottom3,
+.about-bottom4,
+.about-bottom5,
+.about-bottom6 {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-bottom-border {
+    border-bottom: 5px solid black;
+    max-width: 1400px;
+    margin: auto;
+}

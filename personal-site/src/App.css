@@ -1,3 +1,219 @@
+.App {
+    overflow-x: hidden;
+}
+
 .splash-container {
     padding-bottom: 80px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.navbar {
+    font-family: 'Archivo';
+    font-size: 16px;
+    position: fixed;
+    z-index: 5;
+}
+
+.background-purple {
+    background-color: #EAD8FF;
+}
+
+.background-black {
+    background-color: black;
+    color: #EAD8FF;
+}
+
+.navbar-projects, 
+.navbar-about,
+.navbar-skills,
+.navbar-contact {
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.navbar-projects:before, 
+.navbar-about:before,
+.navbar-skills:before,
+.navbar-contact:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #EAD8FF;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.navbar-projects:hover, 
+.navbar-about:hover,
+.navbar-skills:hover,
+.navbar-contact:hover,
+.navbar-projects:focus, 
+.navbar-about:focus,
+.navbar-skills:focus,
+.navbar-contact:focus,
+.navbar-projects:active, 
+.navbar-about:active,
+.navbar-skills:active,
+.navbar-contact:active {
+    cursor: pointer;
+    background-color: white;
+}
+
+.navbar-projects:hover:before, 
+.navbar-about:hover:before,
+.navbar-skills:hover:before,
+.navbar-contact:hover:before,
+.navbar-projects:focus:before, 
+.navbar-about:focus:before, 
+.navbar-skills:focus:before, 
+.navbar-contact:focus:before, 
+.navbar-projects:active:before,
+.navbar-about:active:before,
+.navbar-skills:active:before,
+.navbar-contact:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.navbar-menu-container {
+    position: fixed;
+    right: 0;
+    padding-right: 20px;
+    display: none;
+    z-index: 5;
+}
+
+.navbar-menu {
+    position: relative;
+    cursor: pointer;
+}
+
+.bar1, 
+.bar2, 
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.show-dropdown .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.show-dropdown .bar2 {
+  opacity: 0;
+}
+
+.show-dropdown .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.dropdown-content {
+    font-family: 'Archivo';
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+    position: relative;
+    z-index: 5;
+    display: none;
+    margin-top: 10px;
+}
+
+.show-dropdown {
+    margin-left: 50px;
+}
+
+.show-dropdown + .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.dropdown-content li:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #EAD8FF;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.dropdown-content li:hover, .dropdown-content li:focus, .dropdown-content li:active {
+  color: black;
+}
+
+.dropdown-content li:hover:before, .dropdown-content li:focus:before, .dropdown-content li:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-menu-container {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
 }

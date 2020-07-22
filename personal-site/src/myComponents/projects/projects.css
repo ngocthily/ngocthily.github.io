@@ -1,16 +1,19 @@
 .projects {
-    min-height: 750px;
-    max-width: 1200px;
+    min-height: 1300px;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    /* margin: auto; */
+    overflow-x: hidden;
+}
+
+.projects-header-container {
+    max-width: 800px;
 }
 
 .projects-header {
     font-family: 'Archivo Black';
     font-size: 50px;
-    padding: 10px;
-    border-bottom: 5px solid black;
+    padding-left: 50px;
 }
 
 .project1-2-container {
@@ -24,6 +27,14 @@
     padding: 50px;
     display: flex;
     flex-direction: row;
+    position: relative;
+}
+
+.project1-container a,
+.project2-container a,
+.project3-container a {
+    text-decoration: none;
+    color: black;
 }
 
 .project3-container {
@@ -34,16 +45,53 @@
 .project2,
 .project3 {
     background-color: #EAD8FF;
-    min-width: 500px;
-    min-height: 400px;
+    min-width: 600px;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+    z-index: 2;
+    position: relative;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.project1:hover,
+.project2:hover,
+.project3:hover {
+    opacity: 0;
+}
+
+.project1-overlay,
+.project2-overlay,
+.project3-overlay {
+    min-width: 600px;
+    min-height: 500px;
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.proofs-line-img,
+.huddleup-img {
+    max-width: 600px;
+    max-height: 500px;
+}
+
+.pacman-img {
+    max-width: 800px;
 }
 
 .project3 {
-    min-width: 700px;
+    min-width: 800px;
 }
 
 .project1-description-tech-container,
@@ -65,6 +113,10 @@
     font-size: 14px;
 }
 
+.git-img-link {
+    height: 20px;
+}
+
 .git-img {
     width: 20px;
     padding: 10px;
@@ -78,3 +130,59 @@
     font-size: 30px;
     padding: 10px;
 }
+
+.proofs-line-web-homepage {
+    width: 400px;
+    
+}
+
+.proofs-line-mobile-homepage {
+    width: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .projects {
+        min-height: 2000px;
+    }
+
+    .project1-2-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project3-container {
+        top: 445px;
+    }
+}
+
+/* @media only screen and (max-width: 800px) {
+    .projects-header-container {
+        max-width: 700px;
+    }
+
+    .projects-header {
+        margin-left: 10px;
+    }
+} */
+
+
+/* @media only screen and (max-width: 600px) {
+    .projects-header-container {
+        max-width: 800px;
+    }
+
+    .projects-header {
+        margin-left: 180px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .projects-header-container {
+        max-width: 800px;
+    }
+
+    .projects-header {
+        margin-left: 230px;
+        font-size: 30px;
+    }
+} */

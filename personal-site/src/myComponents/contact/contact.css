@@ -1,0 +1,68 @@
+ /* #EAD8FF */
+.contact {
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Archivo Black';
+    min-height: 300px;
+}
+ 
+.contact-row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-header {
+    font-size: 40px;
+}
+
+.email-link {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-email {
+    font-size: 96px;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 40px;
+    bottom: 40px;
+}
+
+.contact-email:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: #000;
+  height: 10px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.contact-email:hover:after,
+.contact-email:focus:after,
+.contact-email:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.contact-social {
+    position: relative;
+    top: 100px;
+}
+
+.github-img, 
+.angellist-img,
+.linkedin-img {
+    width: 20px;
+    padding: 10px;
+}

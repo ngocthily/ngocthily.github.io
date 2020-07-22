@@ -1,0 +1,77 @@
+.research-header-container {
+    max-width: 1320px;
+    padding-left: 50px;
+}
+
+.research-header {
+    font-family: 'Archivo Black';
+    font-size: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    border-bottom: 5px solid black;
+}
+
+.research-link {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.research-box-container {
+    padding: 50px;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.research-box-container:hover {
+    opacity: 0;
+}
+
+.research-overlay {
+    padding: 50px;
+    min-width: 600px;
+    min-height: 500px;
+    position: absolute;
+    top: 0;
+    left: 360px;
+    z-index: 1;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.research-img {
+    width: 600px;
+    height: 500px;
+}
+
+.research-box {
+    background-color: #EAD8FF;
+    max-width: 600px;
+    min-height: 500px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.research-description-tech {
+    padding: 10px;
+    font-family: 'Archivo';
+}
+
+.research-title {
+    font-family: 'Archivo Black';
+    font-size: 30px;
+    padding: 10px;
+    max-width: 350px;
+    float: right;
+}
