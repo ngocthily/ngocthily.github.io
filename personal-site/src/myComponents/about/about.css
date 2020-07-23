@@ -1,9 +1,3 @@
-.about-top-border {
-    border-top: 5px solid black;
-    max-width: 1320px;
-    margin: auto;
-}
-
 .about-top {
     font-family: 'Archivo Black';
     font-size: 60px;
@@ -23,20 +17,44 @@
 }
 
 .resume-link {
-    text-decoration-color: black;
-    display: block;
-    width: fit-content;
+    text-decoration: none;
+    color: black;
 }
 
 .about-top6 {
     font-size: 20px;
     color: black;
     padding-left: 10px;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-top6:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: #000;
+  height: 5px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.about-top6:hover:after,
+.about-top6:focus:after,
+.about-top6:active:after {
+  left: 5px;
+  right: auto;
+  width: 100%;
 }
 
 .about-bottom {
     font-family: 'Archivo Black';
-    font-size: 46px;
+    font-size: 40px;
     padding: 50px;
     text-align: right;
 }
@@ -52,8 +70,82 @@
     padding-bottom: 20px;
 }
 
-.about-bottom-border {
-    border-bottom: 5px solid black;
-    max-width: 1400px;
-    margin: auto;
+/* hover images */
+.about-bottom1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.about-bottom1,
+.about-bottom2,
+.about-bottom4,
+.about-bottom5,
+.about-bottom6 {
+    cursor: pointer;
+    position: relative;
+}
+
+.about-bottom1-img {
+    display: none;
+}
+
+.dumbbells-img {
+    width: 120px;
+}
+
+.white-castle-img,
+.dress-img,
+.tom-img {
+    width: 100px;
+    display: none;
+} 
+
+.book-img {
+    width: 250px;
+    display: none;
+}
+
+.newton-img {
+    width: 200px;
+    display: none;
+}
+
+.about-bottom1-description:hover + .about-bottom1-img {
+    display: block;
+}
+
+.about-bottom2:hover + .dress-img {
+    display: block;
+    position: absolute;
+    margin-top: -140px;
+    margin-left: 650px;
+}
+
+.about-bottom3:hover + .white-castle-img {
+    display: block;
+    position: absolute;
+    margin-top: -140px;
+    margin-left: 550px;
+}
+
+.about-bottom4:hover + .tom-img {
+    display: block;
+    position: absolute;
+    margin-top: -140px;
+    margin-left: 250px;
+}
+
+.about-bottom5:hover + .book-img {
+    display: block;
+    position: absolute;
+    margin-top: -140px;
+    margin-left: 0px;
+}
+
+.about-bottom6:hover + .newton-img {
+    display: block;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: -50px;
 }

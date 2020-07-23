@@ -7,18 +7,29 @@
     padding-bottom: 80px;
 }
 
+.about-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    background-color: #EAD8FF;
+}
+
 .projects-container {
     display: flex;
     justify-content: center;
 }
 
-.projects-header-container {
+.projects-header-container,
+.research-header-container {
     display: flex;
     max-width: 1300px;
     margin: auto;
 }
 
-.projects-header {
+.projects-header,
+.research-header {
     font-family: 'Archivo Black';
     font-size: 50px;
     padding-left: 50px;

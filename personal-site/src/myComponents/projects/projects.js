@@ -15,7 +15,7 @@ function Projects() {
                     <a className="git-img-link" href="https://github.com/ngocthily/Proofs-Line" target="_blank">
                         <img className="git-img" src={Git} />
                     </a>
-                    <a href="https://proofs-line.herokuapp.com/#/" target="_blank">
+                    <a className="proofs-line-link" href="https://proofs-line.herokuapp.com/#/" target="_blank">
                         <div className="project1">
                             <div className="project1-description-tech-container">
                                 <div className="project1-description">

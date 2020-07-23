@@ -174,9 +174,13 @@
         min-height: 1300px;
     }
 
+
     .project1,
     .project2,
-    .project3 {
+    .project3,
+    .project1-overlay,
+    .project2-overlay,
+    .project3-overlay {
         min-width: 300px;
         min-height: 300px;
     }

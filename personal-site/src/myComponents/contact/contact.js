@@ -28,9 +28,15 @@ function Contact () {
                     </div>
                 </a>
                 <div className="contact-social">
-                    <img className="github-img" src={Github}/>
-                    <img className="angellist-img" src={Angellist}/>
-                    <img className="linkedin-img" src={Linkedin}/>
+                    <a href="https://github.com/ngocthily" target="_blank">
+                        <img className="github-img" src={Github}/>
+                    </a>
+                    <a href="https://angel.co/u/ngocthily" target="_blank">
+                        <img className="angellist-img" src={Angellist}/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ngocthily/" target="_blank">
+                        <img className="linkedin-img" src={Linkedin}/>
+                    </a>
                 </div>
             </div>
         </div>

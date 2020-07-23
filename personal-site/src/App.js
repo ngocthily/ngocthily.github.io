@@ -109,6 +109,11 @@ function App() {
       <div className="projects-container">
         <Projects/>
       </div>
+      <div className="research-header-container">
+        <div className="research-header">
+          Research
+        </div>
+      </div>
       <div className="research-container">
         <Research/>
       </div>

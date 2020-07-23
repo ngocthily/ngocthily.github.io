@@ -1,25 +1,31 @@
-.research-header-container {
-    max-width: 1320px;
-    padding-left: 50px;
-}
-
-.research-header {
-    font-family: 'Archivo Black';
-    font-size: 50px;
+.research {
     display: flex;
-    flex-direction: row-reverse;
-    padding: 10px;
-    border-bottom: 5px solid black;
-}
-
-.research-link {
-    text-decoration: none;
-    color: black;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
     position: relative;
 }
 
 .research-box-container {
     padding: 50px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+}
+
+.research-box-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.research-box {
+    background-color: #EAD8FF;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     cursor: pointer;
     z-index: 2;
     position: relative;
@@ -29,17 +35,16 @@
     transition: opacity 0.5s ease-in-out;
 }
 
-.research-box-container:hover {
+.research-box:hover {
     opacity: 0;
 }
 
 .research-overlay {
-    padding: 50px;
     min-width: 600px;
-    min-height: 500px;
-    position: absolute;
-    top: 0;
-    left: 360px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -550px;
     z-index: 1;
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
@@ -48,30 +53,61 @@
 }
 
 .research-img {
-    width: 600px;
-    height: 500px;
+    max-width: 580px;
+    max-height: 500px;
+    position: absolute;
+    top: 50px;
 }
 
-.research-box {
-    background-color: #EAD8FF;
-    max-width: 600px;
-    min-height: 500px;
-    margin: auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.research-description-tech {
+.research-description-tech-container {
     padding: 10px;
     font-family: 'Archivo';
+}
+
+.research-description {
+    font-size: 18px;
+}
+
+.research-tech {
+    font-size: 14px;
 }
 
 .research-title {
     font-family: 'Archivo Black';
     font-size: 30px;
     padding: 10px;
-    max-width: 350px;
-    float: right;
+}
+
+@media only screen and (max-width: 500px) {
+    .research-box {
+        width: 400px;
+        height: 400px;
+    }
+
+    .research-overlay {
+        min-width: 400px;
+        min-height: 400px;
+    }
+
+    .research-img {
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .research-box {
+        width: 300px;
+        height: 300px;
+    }
+
+    .research-overlay {
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    .research-img {
+        max-width: 300px;
+        max-height: 300px;
+    }
 }

@@ -11,11 +11,12 @@
 }
 
 .splash-description {
-    padding: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
 }
 
 .splash-location {
-    padding-left: 40px;
+    padding-bottom: 20px;
     padding-right: 40px;
     display: flex;
     justify-content: flex-end;

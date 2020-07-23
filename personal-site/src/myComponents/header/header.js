@@ -29,7 +29,7 @@ function Header() {
                     NGOC THI LY
                 </div>
                 <div className="header-abbr" onClick={scrollToTop}>
-                    NTL
+                    NGOC THI LY
                 </div>
             </div>
         </div>
