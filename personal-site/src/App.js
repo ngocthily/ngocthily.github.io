@@ -12,22 +12,22 @@ import Contact from './myComponents/contact/contact';
 function App() {
 
   function scrollToProjects() {
-    var elmnt = document.getElementsByClassName("projects-container");
+    let elmnt = document.getElementsByClassName("projects-container");
     (elmnt)[0].scrollIntoView({ behavior: "smooth" });
   }
 
   function scrollToAbout() {
-    var elmnt = document.getElementsByClassName("about-container");
+    let elmnt = document.getElementsByClassName("about-container");
     (elmnt)[0].scrollIntoView({ behavior: "smooth" });
   }
 
   function scrollToSkills() {
-    var elmnt = document.getElementsByClassName("skills-container");
+    let elmnt = document.getElementsByClassName("skills-container");
     (elmnt)[0].scrollIntoView({ behavior: "smooth" });
   }
 
   function scrollToContact() {
-    var elmnt = document.getElementsByClassName("contact-container");
+    let elmnt = document.getElementsByClassName("contact-container");
     (elmnt)[0].scrollIntoView({ behavior: "smooth" });
   }
 
@@ -37,32 +37,26 @@ function App() {
     // clean up
     // navbar background color changes 
     console.log("here")
+    var elmnt = document.getElementsByClassName("navbar");
     if (document.documentElement.scrollTop > 40 && document.documentElement.scrollTop < 90) {
-      var elmnt = document.getElementsByClassName("navbar");
       (elmnt)[0].classList.remove("background-black");
       (elmnt)[0].classList.add("background-purple");
     } else if (document.documentElement.scrollTop >= 90 && document.documentElement.scrollTop < 700) {
-      var elmnt = document.getElementsByClassName("navbar");
       (elmnt)[0].classList.remove("background-purple");
       (elmnt)[0].classList.add("background-black");
     } else if (document.documentElement.scrollTop >= 900 && document.documentElement.scrollTop < 1400) {
-      var elmnt = document.getElementsByClassName("navbar");
       (elmnt)[0].classList.remove("background-purple");
       (elmnt)[0].classList.add("background-black");
     } else if (document.documentElement.scrollTop >= 1500 && document.documentElement.scrollTop < 2000) {
-      var elmnt = document.getElementsByClassName("navbar");
       (elmnt)[0].classList.remove("background-purple");
       (elmnt)[0].classList.add("background-black");
     } else if (document.documentElement.scrollTop >= 2200 && document.documentElement.scrollTop < 2750) {
-      var elmnt = document.getElementsByClassName("navbar");
       (elmnt)[0].classList.remove("background-purple");
       (elmnt)[0].classList.add("background-black");
     } else if (document.documentElement.scrollTop >= 2750 && document.documentElement.scrollTop < 5000) {
-      var elmnt = document.getElementsByClassName("navbar");
       (elmnt)[0].classList.remove("background-black");
       (elmnt)[0].classList.add("background-purple");
     } else {
-      var elmnt = document.getElementsByClassName("navbar");
       (elmnt)[0].classList.remove("background-black");
       (elmnt)[0].classList.remove("background-purple");
     }

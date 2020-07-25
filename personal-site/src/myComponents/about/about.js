@@ -28,7 +28,7 @@ function About() {
                     <div className="about-top5">
                         a B.A. in psychology. 
                     </div>
-                    <a className="resume-link" href="https://ngocthily.com/resume.pdf" target="_blank">
+                    <a className="resume-link" href="https://ngocthily.com/resume.pdf" target="_blank" rel="noopener noreferrer">
                         <div className="about-top6">
                             Click for resume
                         </div>

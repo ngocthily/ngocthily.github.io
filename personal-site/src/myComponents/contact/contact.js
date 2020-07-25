@@ -28,13 +28,13 @@ function Contact () {
                     </div>
                 </a>
                 <div className="contact-social">
-                    <a href="https://github.com/ngocthily" target="_blank">
+                    <a href="https://github.com/ngocthily" target="_blank" rel="noopener noreferrer">
                         <img className="github-img" src={Github}/>
                     </a>
-                    <a href="https://angel.co/u/ngocthily" target="_blank">
+                    <a href="https://angel.co/u/ngocthily" target="_blank" rel="noopener noreferrer">
                         <img className="angellist-img" src={Angellist}/>
                     </a>
-                    <a href="https://www.linkedin.com/in/ngocthily/" target="_blank">
+                    <a href="https://www.linkedin.com/in/ngocthily/" target="_blank" rel="noopener noreferrer">
                         <img className="linkedin-img" src={Linkedin}/>
                     </a>
                 </div>

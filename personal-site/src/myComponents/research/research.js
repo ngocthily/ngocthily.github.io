@@ -8,7 +8,7 @@ function research() {
         <div>
             <div className="research">
                 <div className="research-box-container">
-                    <a className="research-link" href="http://www.radiology.uci.edu/research/index.asp" target="_blank">
+                    <a className="research-link" href="http://www.radiology.uci.edu/research/index.asp" target="_blank" rel="noopener noreferrer">
                         <div className="research-box">
                             <div className="research-description-tech-container">
                                 <div className="research-description">

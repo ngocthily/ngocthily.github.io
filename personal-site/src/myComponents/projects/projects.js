@@ -12,10 +12,10 @@ function Projects() {
         <div className="projects">
             <div className="project1-2-container">
                 <div className="project1-container">
-                    <a className="git-img-link" href="https://github.com/ngocthily/Proofs-Line" target="_blank">
+                        <a className="git-img-link" href="https://github.com/ngocthily/Proofs-Line" target="_blank" rel="noopener noreferrer">
                         <img className="git-img" src={Git} />
                     </a>
-                    <a className="proofs-line-link" href="https://proofs-line.herokuapp.com/#/" target="_blank">
+                        <a className="proofs-line-link" href="https://proofs-line.herokuapp.com/#/" target="_blank" rel="noopener noreferrer">
                         <div className="project1">
                             <div className="project1-description-tech-container">
                                 <div className="project1-description">
@@ -35,10 +35,10 @@ function Projects() {
                     </a>
                 </div>
                 <div className="project2-container">
-                    <a href="https://github.com/jmiggs/huddleUP" target="_blank">
+                    <a href="https://github.com/jmiggs/huddleUP" target="_blank" rel="noopener noreferrer">
                         <img className="git-img" src={Git} />
                     </a>
-                    <a className="git-img-link" href="https://huddleups.herokuapp.com/#/" target="_blank">
+                    <a className="git-img-link" href="https://huddleups.herokuapp.com/#/" target="_blank" rel="noopener noreferrer">
                         <div className="project2">
                             <div className="project2-description-tech-container">
                                 <div className="project2-description">
@@ -59,10 +59,10 @@ function Projects() {
                 </div>
             </div>
             <div className="project3-container">
-                <a href="https://github.com/ngocthily/pacman" target="_blank">
+                <a href="https://github.com/ngocthily/pacman" target="_blank" rel="noopener noreferrer">
                     <img className="git-img" src={Git} />
                 </a>
-                <a className="git-img-link" href="https://ngocthily.com/pacman/" target="_blank">
+                <a className="git-img-link" href="https://ngocthily.com/pacman/" target="_blank" rel="noopener noreferrer">
                     <div className="project3">
                         <div className="project3-description-tech-container">
                             <div className="project3-description">

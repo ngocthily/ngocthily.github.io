@@ -5,14 +5,12 @@ function Header() {
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
+        var elmnt1 = document.getElementsByClassName("header-main");
+        var elmnt2 = document.getElementsByClassName("header-abbr");
         if (document.documentElement.scrollTop > 40) {
-            var elmnt1 = document.getElementsByClassName("header-main");
             (elmnt1)[0].classList.add("main-none");
-            var elmnt2 = document.getElementsByClassName("header-abbr");
             (elmnt2)[0].classList.add("abbr-show");
         } else {
-            var elmnt1 = document.getElementsByClassName("header-main");
-            var elmnt2 = document.getElementsByClassName("header-abbr");
             (elmnt1)[0].classList.remove("main-none");
             (elmnt2)[0].classList.remove("abbr-show");
         }
