@@ -1,198 +1,71 @@
 .projects {
-    min-height: 1200px;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-.project1-2-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.project1-container,
-.project2-container,
-.project3-container {
     padding: 50px;
-    display: flex;
-    flex-direction: row;
-    position: relative;
 }
 
-.project1-container a,
-.project2-container a,
-.project3-container a {
-    text-decoration: none;
-    color: black;
-}
-
-.project3-container {
-    justify-content: center;
+.projects-header {
+    font-family: 'Archivo';
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
 }
 
 .project1,
 .project2,
 .project3 {
-    background-color: #EAD8FF;
-    min-width: 600px;
-    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project2 {
+    flex-direction: row-reverse;
+}
+
+.project1-img,
+.project2-img,
+.project3-img {
+    max-width: 600px;
+}
+
+.project1-summary,
+.project2-summary,
+.project3-summary  {
+    font-family: 'Archivo';
+    color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    z-index: 2;
-    position: relative;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
+    justify-content: center;
 }
 
-.project1:hover,
-.project2:hover,
-.project3:hover {
-    opacity: 0;
+.project2-summary {
+    text-align: right;
 }
 
-.project1-overlay,
-.project2-overlay,
-.project3-overlay {
-    min-width: 600px;
-    min-height: 500px;
-    margin-top: 50px;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.proofs-line-img,
-.huddleup-img {
-    max-width: 600px;
-    max-height: 500px;
-}
-
-.pacman-img {
-    width: 800px;
-}
-
-.project3 {
-    min-width: 800px;
-}
-
-.project1-description-tech-container,
-.project2-description-tech-container,
-.project3-description-tech-container {
-    padding: 10px;
-    font-family: 'Archivo';
+.project1-name,
+.project2-name,
+.project3-name {
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .project1-description,
 .project2-description,
 .project3-description {
-    font-size: 18px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-width: 500px;
 }
 
-.project1-tech,
-.project2-tech,
-.project3-tech {
-    font-size: 14px;
+.project1-links,
+.project2-links,
+.project3-links  {
+    padding-top: 50px;
 }
 
-.git-img-link {
-    height: 20px;
+.project1-links a,
+.project2-links a,
+.project3-links a   {
+    color: #5D4E60;
 }
-
-.git-img {
-    width: 20px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.project1-name,
-.project2-name,
-.project3-name  {
-    font-family: 'Archivo Black';
-    font-size: 30px;
-    padding: 10px;
-}
-
-.proofs-line-web-homepage {
-    width: 400px;
-    
-}
-
-.proofs-line-mobile-homepage {
-    width: 100px;
-}
-
-@media only screen and (max-width: 1200px) {
-    .projects {
-        min-height: 2000px;
-    }
-
-    .project1-2-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project3-container {
-        top: 445px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .project3 {
-        min-width: 600px;
-    }
-
-    .pacman-img {
-        width: 600px;
-    }
-}
-
-@media only screen and (max-width: 680px) {
-    .project1,
-    .project2,
-    .project3 {
-        min-width: 450px;
-    }
-
-    .proofs-line-img,
-    .huddleup-img,
-    .pacman-img {
-        width: 450px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .projects {
-        min-height: 1300px;
-    }
-
-
-    .project1,
-    .project2,
-    .project3,
-    .project1-overlay,
-    .project2-overlay,
-    .project3-overlay {
-        min-width: 300px;
-        min-height: 300px;
-    }
-
-    .proofs-line-img,
-    .huddleup-img,
-    .pacman-img {
-        width: 300px;
-    }
-
-    .project3-container {
-        top: 244px;
-    }
-}
-

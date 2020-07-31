@@ -1,151 +1,59 @@
-.about-top {
-    font-family: 'Archivo Black';
-    font-size: 60px;
+.about {
+    padding: 50px;
+}
+
+.about-title {
+    font-family: 'Archivo';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.about-img-summary-resume-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding-top: 50px;
-    padding-left: 50px;
+}
+
+.about-img-container {
     padding-right: 50px;
 }
 
-.about-top1,
-.about-top2,
-.about-top3,
-.about-top4,
-.about-top5 {
-    padding: 10px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.resume-link {
-    text-decoration: none;
-    color: black;
-}
-
-.about-top6 {
-    font-size: 20px;
-    color: black;
-    padding-left: 10px;
-    display: inline;
+.about-img {
+    max-width: 100px;
     position: relative;
-    overflow: hidden;
+    z-index: 2;
 }
 
-.about-top6:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  width: 0;
-  bottom: -5px;
-  background: #000;
-  height: 5px;
-  transition-property: width;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-
-.about-top6:hover:after,
-.about-top6:focus:after,
-.about-top6:active:after {
-  left: 5px;
-  right: auto;
-  width: 100%;
-}
-
-.about-bottom {
-    font-family: 'Archivo Black';
-    font-size: 40px;
-    padding: 50px;
-    text-align: right;
-}
-
-.about-bottom1,
-.about-bottom2,
-.about-bottom3,
-.about-bottom4,
-.about-bottom5,
-.about-bottom6 {
-    padding: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-/* hover images */
-.about-bottom1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.about-bottom1,
-.about-bottom2,
-.about-bottom4,
-.about-bottom5,
-.about-bottom6 {
-    cursor: pointer;
-    position: relative;
-}
-
-.about-bottom1-img {
-    display: none;
-}
-
-.dumbbells-img {
-    width: 120px;
-}
-
-.white-castle-img,
-.dress-img,
-.tom-img {
+.about-square {
     width: 100px;
-    display: none;
-} 
-
-.book-img {
-    width: 250px;
-    display: none;
+    height: 100px;
+    position: relative;
+    top: -80px;
+    left: 20px;
+    outline-style: solid;
+    outline-color: white;
+    z-index: 1;
 }
 
-.newton-img {
-    width: 200px;
-    display: none;
+.about-summary-resume-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
 }
 
-.about-bottom1-description:hover + .about-bottom1-img {
-    display: block;
+.about-summary {
+    max-width: 500px;
+    font-family: 'Archivo';
+    color: white;
+    font-size: 20px;
 }
 
-.about-bottom2:hover + .dress-img {
-    display: block;
-    position: absolute;
-    margin-top: -140px;
-    margin-left: 650px;
+.about-summary-resume-container a {
+    color: #5D4E60;
 }
 
-.about-bottom3:hover + .white-castle-img {
-    display: block;
-    position: absolute;
-    margin-top: -140px;
-    margin-left: 550px;
-}
-
-.about-bottom4:hover + .tom-img {
-    display: block;
-    position: absolute;
-    margin-top: -140px;
-    margin-left: 250px;
-}
-
-.about-bottom5:hover + .book-img {
-    display: block;
-    position: absolute;
-    margin-top: -140px;
-    margin-left: 0px;
-}
-
-.about-bottom6:hover + .newton-img {
-    display: block;
-    position: absolute;
-    margin-top: -120px;
-    margin-left: -50px;
+.about-resume {
+    padding-top: 10px;
 }

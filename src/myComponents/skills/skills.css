@@ -1,29 +1,156 @@
 .skills {
-    font-family: 'Archivo Black';
-    font-size: 40px;
-    display: flex;
-    flex-direction: column;
     padding: 50px;
-    max-width: 1100px;
-    margin: auto;
 }
 
-.skills-row1,
-.skills-row2,
-.skills-row3,
-.skills-row4,
-.skills-row5,
-.skills-row6 {
-    display: flex;
-    flex-direction: row;
+.skills-header {
+    font-family: 'Archivo';
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
 }
 
-.skills-row1 li,
-.skills-row2 li,
-.skills-row3 li,
-.skills-row4 li,
-.skills-row5 li,
-.skills-row6 li {
-    list-style-type: none;
-    padding: 40px;
+.all-skill-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.skill {
+  /* border: 1px solid black; */
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.javascript-img,
+.react-img,
+.redux-img,
+.jquery-img,
+.rspec-img,
+.matlab-img,
+.cplusplus-img {
+    max-width: 50px;
+    cursor: pointer;
+}
+
+.css-img,
+.html-img {
+    max-width: 40px;
+}
+
+.node-img,
+.postgresql-img,
+.git-img,
+.figma-img {
+    max-width: 80px;
+}
+
+.webpack-img,
+.npm-img,
+.ruby-img,
+.rails-img,
+.wolfram-img,
+.mongodb-img,
+.aws-img,
+.heroku-img,
+.vscode-img {
+    max-width: 60px;
+}
+
+.express-img {
+    max-width: 100px;
+}
+
+.aws-img {
+    margin-top: 25px;
+}
+
+.javascript-img,
+.react-img,
+.redux-img,
+.node-img,
+.jquery-img,
+.webpack-img,
+.npm-img,
+.express-img,
+.ruby-img,
+.rspec-img,
+.rails-img,
+.wolfram-img,
+.matlab-img,
+.cplusplus-img,
+.postgresql-img,
+.mongodb-img,
+.css-img,
+.html-img,
+.heroku-img,
+.vscode-img,
+.aws-img,
+.git-img,
+.figma-img {
+    position: relative;
+    z-index: 2;
+}
+
+.javascript-img:hover,
+.react-img:hover,
+.redux-img:hover,
+.node-img:hover,
+.jquery-img:hover,
+.webpack-img:hover,
+.npm-img:hover,
+.express-img:hover,
+.ruby-img:hover,
+.rspec-img:hover,
+.rails-img:hover,
+.wolfram-img:hover,
+.matlab-img:hover,
+.cplusplus-img:hover,
+.postgresql-img:hover,
+.mongodb-img:hover,
+.css-img:hover,
+.html-img:hover,
+.heroku-img:hover,
+.vscode-img:hover,
+.aws-img:hover,
+.git-img:hover,
+.figma-img:hover {
+    opacity: 0;
+}
+
+.javascript-img:hover + .tech-name,
+.react-img:hover + .tech-name,
+.redux-img:hover + .tech-name,
+.node-img:hover + .tech-name,
+.jquery-img:hover + .tech-name,
+.webpack-img:hover + .tech-name,
+.npm-img:hover + .tech-name,
+.express-img:hover + .tech-name,
+.ruby-img:hover + .tech-name,
+.rspec-img:hover + .tech-name,
+.rails-img:hover + .tech-name,
+.wolfram-img:hover + .tech-name,
+.matlab-img:hover + .tech-name,
+.cplusplus-img:hover + .tech-name,
+.postgresql-img:hover + .tech-name,
+.mongodb-img:hover + .tech-name,
+.css-img:hover + .tech-name,
+.html-img:hover + .tech-name,
+.heroku-img:hover + .tech-name,
+.vscode-img:hover + .tech-name,
+.aws-img:hover + .tech-name,
+.git-img:hover + .tech-name,
+.figma-img:hover + .tech-name  {
+    opacity: 1;
+}
+
+.tech-name {
+    font-family: 'Archivo';
+    position: relative;
+    color: white;
+    top: -50px;
+    opacity: 0;
+    z-index: 1;
 }

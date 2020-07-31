@@ -8,7 +8,7 @@
     font-size: 55px;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    color: white;
 }
 
 .main-none {
@@ -17,10 +17,11 @@
 
 .header-abbr {
     font-family: 'Archivo Black';
+    color: white;
     font-size: 24px;
-    max-width: 200px;
     cursor: pointer;
-    margin-top: -120px;
+    top: 10px;
+    left: 30px;
     position: fixed;
     z-index: 5;
     display: none;
@@ -33,9 +34,5 @@
 @media only screen and (max-width: 600px) {
     .header-main {
         font-size: 40px;
-    }
-
-    .header-abbr {
-        padding: 20px;
     }
 }

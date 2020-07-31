@@ -1,69 +1,72 @@
- /* #EAD8FF */
 .contact {
     padding: 50px;
-    max-width: 1200px;
-    margin: auto;
-    font-family: 'Archivo Black';
-    min-height: 300px;
-}
- 
-.contact-row1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .contact-header {
-    font-size: 40px;
+    font-family: 'Archivo';
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
 }
 
-.email-link {
-    text-decoration: none;
-    color: black;
+.email-header {
+    font-family: 'Archivo Black';
+    font-size: 50px;
+    color: #A88FAC;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
-.contact-email {
-    font-size: 96px;
+.email-container {
+    padding: 20px;
+}
+
+.email {
+    font-family: 'Archivo Black';
+    font-size: 50px;
+    color: white;
     display: inline;
     position: relative;
     overflow: hidden;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    top: 40px;
-    bottom: 40px;
-    z-index: 3;
 }
 
-.contact-email:after {
+.email a {
+    color: white;
+    text-decoration: none;
+}
+
+.email:after {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   right: 0;
   width: 0;
-  bottom: -8px;
-  background: #000;
-  height: 15px;
+  bottom: -15px;
+  background: white;
+  height: 10px;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
 
-.contact-email:hover:after,
-.contact-email:focus:after,
-.contact-email:active:after {
+.email:hover:after,
+.email:focus:after,
+.email:active:after {
   left: 0;
   right: auto;
   width: 100%;
 }
 
-.contact-social {
-    position: relative;
-    top: 100px;
+.social-links {
+    padding: 20px;
 }
 
-.github-img, 
-.angellist-img,
-.linkedin-img {
-    width: 20px;
-    padding: 10px;
+.social-links a {
+    margin-right: 10px;
+}
+
+.linkedin-img,
+.github-img,
+.angellist-img {
+    max-width: 25px;
 }

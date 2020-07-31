@@ -11,114 +11,68 @@ import Contact from './myComponents/contact/contact';
 
 function App() {
 
-  function scrollToProjects() {
-    let elmnt = document.getElementsByClassName("projects-container");
-    (elmnt)[0].scrollIntoView({ behavior: "smooth" });
-  }
-
-  function scrollToAbout() {
-    let elmnt = document.getElementsByClassName("about-container");
-    (elmnt)[0].scrollIntoView({ behavior: "smooth" });
-  }
-
-  function scrollToSkills() {
-    let elmnt = document.getElementsByClassName("skills-container");
-    (elmnt)[0].scrollIntoView({ behavior: "smooth" });
-  }
-
-  function scrollToContact() {
-    let elmnt = document.getElementsByClassName("contact-container");
-    (elmnt)[0].scrollIntoView({ behavior: "smooth" });
-  }
-
-  window.addEventListener("scroll",  function() {scrollFunction()});
-
-  function scrollFunction() {
-    // clean up
-    // navbar background color changes 
-    console.log("here")
-    var elmnt = document.getElementsByClassName("navbar");
-    if (document.documentElement.scrollTop > 40 && document.documentElement.scrollTop < 90) {
-      (elmnt)[0].classList.remove("background-black");
-      (elmnt)[0].classList.add("background-purple");
-    } else if (document.documentElement.scrollTop >= 90 && document.documentElement.scrollTop < 700) {
-      (elmnt)[0].classList.remove("background-purple");
-      (elmnt)[0].classList.add("background-black");
-    } else if (document.documentElement.scrollTop >= 900 && document.documentElement.scrollTop < 1400) {
-      (elmnt)[0].classList.remove("background-purple");
-      (elmnt)[0].classList.add("background-black");
-    } else if (document.documentElement.scrollTop >= 1500 && document.documentElement.scrollTop < 2000) {
-      (elmnt)[0].classList.remove("background-purple");
-      (elmnt)[0].classList.add("background-black");
-    } else if (document.documentElement.scrollTop >= 2200 && document.documentElement.scrollTop < 2750) {
-      (elmnt)[0].classList.remove("background-purple");
-      (elmnt)[0].classList.add("background-black");
-    } else if (document.documentElement.scrollTop >= 2750 && document.documentElement.scrollTop < 5000) {
-      (elmnt)[0].classList.remove("background-black");
-      (elmnt)[0].classList.add("background-purple");
-    } else {
-      (elmnt)[0].classList.remove("background-black");
-      (elmnt)[0].classList.remove("background-purple");
-    }
-  }
-
-  function dropdown() {
-    var elmnt = document.getElementsByClassName("navbar-menu");
-    (elmnt)[0].classList.toggle("show-dropdown");
-  }
   return (
-    <div className="App">
+    <div className="app">
+
       <div className="navbar-container">
         <div className="navbar">
-          <div className="navbar-projects" onClick={scrollToProjects}>PROJECTS</div>
-          <div className="navbar-about" onClick={scrollToAbout}>ABOUT</div>
-          <div className="navbar-skills" onClick={scrollToSkills}>SKILLS</div>
-          <div className="navbar-contact" onClick={scrollToContact}>CONTACT</div>
-        </div>
-        <div className="navbar-menu-container">
-          <div className="navbar-menu" onClick={dropdown}>
-            <div className="bar1"></div>
-            <div className="bar2"></div>
-            <div className="bar3"></div>
+          <div className="navbar-first-half">
+            <div className="navbar-projects">
+              Projects
+            </div>
+            <div className="navbar-about">
+              About
+            </div>
           </div>
-          <div className="dropdown-content">
-            <li> Projects </li>
-            <li> About </li>
-            <li> Skills </li>
-            <li> About </li>
+          <div className="navbar-second-half">
+            <div className="navbar-skills">
+              Skills
+            </div>
+            <div className="navbar-contact">
+              Contact
+            </div>
           </div>
         </div>
       </div>
+
       <div className="header-container">
         <Header/>
       </div>
+
       <div className="splash-container">
         <Splash/>
       </div>
-      <div className="projects-header-container">
-        <div className="projects-header">
-          Projects
-        </div>
+
+      <div className="arrow" >
+        V
       </div>
+
       <div className="projects-container">
-        <Projects/>
+        <Projects />
       </div>
-      <div className="research-header-container">
-        <div className="research-header">
-          Research
-        </div>
-      </div>
+
       <div className="research-container">
-        <Research/>
+        <Research />
       </div>
+
+      {/* <div className="arrow" >
+        V
+      </div> */}
+
       <div className="about-container">
-        <About/>
+        <About />
       </div>
+
+      {/* <div className="arrow" >
+        V
+      </div> */}
+
       <div className="skills-container">
-        <Skills/>
+        <Skills />
       </div>
+
       <div className="contact-container">
-        <Contact/>
+        <Contact />
       </div>
     </div>
   );

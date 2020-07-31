@@ -1,113 +1,31 @@
 .research {
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: relative;
-}
-
-.research-box-container {
-    padding: 50px;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    justify-content: center;
-}
-
-.research-box-container a {
-    text-decoration: none;
-    color: black;
-}
-
-.research-box {
-    background-color: #EAD8FF;
-    width: 600px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    z-index: 2;
-    position: relative;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.research-box:hover {
-    opacity: 0;
-}
-
-.research-overlay {
-    min-width: 600px;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -550px;
-    z-index: 1;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.research-img {
-    max-width: 580px;
-    max-height: 500px;
-    position: absolute;
-    top: 50px;
-}
-
-.research-description-tech-container {
-    padding: 10px;
+    align-items: center;
     font-family: 'Archivo';
-}
-
-.research-description {
-    font-size: 18px;
-}
-
-.research-tech {
-    font-size: 14px;
+    color: white;
 }
 
 .research-title {
-    font-family: 'Archivo Black';
-    font-size: 30px;
-    padding: 10px;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
 }
 
-@media only screen and (max-width: 500px) {
-    .research-box {
-        width: 400px;
-        height: 400px;
-    }
-
-    .research-overlay {
-        min-width: 400px;
-        min-height: 400px;
-    }
-
-    .research-img {
-        max-width: 400px;
-        max-height: 400px;
-    }
+.research-position {
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 500px) {
-    .research-box {
-        width: 300px;
-        height: 300px;
-    }
+.research-description {
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
-    .research-overlay {
-        min-width: 300px;
-        min-height: 300px;
-    }
-
-    .research-img {
-        max-width: 300px;
-        max-height: 300px;
-    }
+.research-tech {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
