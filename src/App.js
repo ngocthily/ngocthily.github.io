@@ -4,12 +4,32 @@ import './App.css';
 import Header from './myComponents/header/header';
 import Splash from './myComponents/splash/splash';
 import Projects from './myComponents/projects/projects';
-import Research from './myComponents/research/research';
+// import Research from './myComponents/research/research';
 import About from './myComponents/about/about';
 import Skills from './myComponents/skills/skills';
 import Contact from './myComponents/contact/contact';
 
 function App() {
+
+  function scrollToProjects() {
+    var elmnt = document.getElementsByClassName("projects-container");
+    (elmnt)[0].scrollIntoView({ behavior: "smooth" });
+  }
+
+  function scrollToAbout() {
+    var elmnt = document.getElementsByClassName("about-container");
+    (elmnt)[0].scrollIntoView({ behavior: "smooth" });
+  }
+
+  function scrollToSkills() {
+    var elmnt = document.getElementsByClassName("skills-container");
+    (elmnt)[0].scrollIntoView({ behavior: "smooth" });
+  }
+
+  function scrollToContact() {
+    var elmnt = document.getElementsByClassName("contact-container");
+    (elmnt)[0].scrollIntoView({ behavior: "smooth" });
+  }
 
   return (
     <div className="app">
@@ -17,18 +37,18 @@ function App() {
       <div className="navbar-container">
         <div className="navbar">
           <div className="navbar-first-half">
-            <div className="navbar-projects">
+            <div className="navbar-projects" onClick={scrollToProjects}>
               Projects
             </div>
-            <div className="navbar-about">
+            <div className="navbar-about" onClick={scrollToAbout}>
               About
             </div>
           </div>
           <div className="navbar-second-half">
-            <div className="navbar-skills">
+            <div className="navbar-skills" onClick={scrollToSkills}>
               Skills
             </div>
-            <div className="navbar-contact">
+            <div className="navbar-contact" onClick={scrollToContact}>
               Contact
             </div>
           </div>
@@ -43,7 +63,7 @@ function App() {
         <Splash/>
       </div>
 
-      <div className="arrow" >
+      <div className="arrow" onClick={scrollToProjects}>
         V
       </div>
 
@@ -51,9 +71,9 @@ function App() {
         <Projects />
       </div>
 
-      <div className="research-container">
+      {/* <div className="research-container">
         <Research />
-      </div>
+      </div> */}
 
       {/* <div className="arrow" >
         V

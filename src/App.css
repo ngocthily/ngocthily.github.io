@@ -2,6 +2,11 @@
     background-color: #A88FAC;
 }
 
+.navbar-container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between; 
@@ -31,6 +36,8 @@
     -webkit-text-stroke-color: white;
     font-size: 30px;
     text-align: center;
+    max-width: 30px;
+    margin: 0 auto;
     margin-top: 50px;
 }
 

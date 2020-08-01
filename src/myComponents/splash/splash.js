@@ -6,7 +6,12 @@ function Splash() {
         <div>
             <div className="splash">
                 <div className="splash-top">
-                    I am a full-stack software developer
+                    <div className="splash-top1 animate__animated animate__fadeInLeft">
+                        I am a full-stack 
+                    </div>
+                    <div className="splash-top2  animate__animated animate__fadeInRight">
+                        software developer
+                    </div>
                 </div>
                 <div className="splash-bottom">
                     Based in San Jose, CA
