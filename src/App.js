@@ -71,21 +71,21 @@ function App() {
         <Projects />
       </div>
 
+      <div className="arrow" onClick={scrollToAbout}>
+        V
+      </div>
+
       {/* <div className="research-container">
         <Research />
-      </div> */}
-
-      {/* <div className="arrow" >
-        V
       </div> */}
 
       <div className="about-container">
         <About />
       </div>
 
-      {/* <div className="arrow" >
+      <div className="arrow" onClick={scrollToSkills}>
         V
-      </div> */}
+      </div>
 
       <div className="skills-container">
         <Skills />

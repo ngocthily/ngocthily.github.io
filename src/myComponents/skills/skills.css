@@ -2,13 +2,6 @@
     padding: 50px;
 }
 
-.skills-header {
-    font-family: 'Archivo';
-    font-size: 50px;
-    color: white;
-    font-weight: bold;
-}
-
 .all-skill-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto;

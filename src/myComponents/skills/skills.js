@@ -29,9 +29,6 @@ function Skills() {
     return (
         <div>
             <div className="skills">
-                <div className="skills-header">
-                    Skills
-                </div>
                 <div className="all-skill-container">
                     <div className="skill 1">
                         <img className="javascript-img" src={JavascriptImg} />

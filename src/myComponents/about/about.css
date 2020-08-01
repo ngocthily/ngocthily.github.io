@@ -1,60 +1,110 @@
 .about {
     padding: 50px;
-    margin-top: 100px;
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
 }
 
-.about-title {
-    font-family: 'Archivo';
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-}
-
-.about-img-summary-resume-container {
+.about1 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding-top: 50px;
-}
-
-.about-img-container {
-    padding-right: 50px;
-}
-
-.about-img {
-    max-width: 100px;
     position: relative;
-    z-index: 2;
-}
-
-.about-square {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    top: -80px;
-    left: 20px;
-    outline-style: solid;
-    outline-color: white;
     z-index: 1;
 }
 
-.about-summary-resume-container {
-    display: flex;
-    flex-direction: column;
-    padding-left: 50px;
-}
-
-.about-summary {
-    max-width: 500px;
-    font-family: 'Archivo';
+.about-name {
+    margin-left: 20px;
+    position: relative;
     color: white;
-    font-size: 20px;
+    text-decoration: underline;
 }
 
-.about-summary-resume-container a {
-    color: #5D4E60;
+.about-name:hover {
+    text-decoration: underline;
 }
 
-.about-resume {
-    padding-top: 10px;
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    position: absolute;
+    max-width: 300px;
+    margin-top: 10px;
+    z-index: 3;
+    display: none;
+}
+
+.showProfile {
+    display: block;
+}
+
+.about1 {
+    font-family: 'Archivo Black';
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+
+.about3,
+.about5,
+.about7,
+.about9,
+.about11,
+.about2,
+.about4,
+.about6,
+.about8,
+.about10,
+.about12 {
+    font-family: 'Archivo Black';
+    color: #A88FAC;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-size: 40px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+
+.about1:hover,
+.about3:hover,
+.about5:hover,
+.about7:hover,
+.about9:hover,
+.about11:hover,
+.about2:hover,
+.about4:hover,
+.about6:hover,
+.about8:hover,
+.about10:hover,
+.about12:hover {
+    color: white;
+    -webkit-text-stroke-width: unset;
+    -webkit-text-stroke-color: unset;
+}
+
+.removeHighlight {
+    color: #A88FAC;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.unboldAndRemove {
+    color: #A88FAC;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-decoration: none;
+}
+
+.boldName {
+    color: white;
+    -webkit-text-stroke-width: unset;
+    -webkit-text-stroke-color: unset;
+    text-decoration: underline;
 }
