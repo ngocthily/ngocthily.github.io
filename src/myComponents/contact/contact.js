@@ -9,17 +9,22 @@ function Contact () {
     return (
         <div>
             <div className="contact">
-                <div className="contact-header">
-                    Contact
-                </div>
-                <div className="email-container">
+                <div className="email-header-container">
                     <div className="email-header">
-                        Email:
+                        <div className="email-header1">
+                            Get in touch:
+                        </div>
+                        <div className="email-header2">
+                            Currently looking for opportunities, 
+                            especially to contribute to a good cause
+                        </div>
                     </div>
-                    <div className="email">
-                        <a href="mailto:ngoctly94@gmail.com">
-                            Ngoctly94@gmail.com
-                        </a>
+                    <div className="email-container">
+                        <div className="email">
+                            <a href="mailto:ngoctly94@gmail.com">
+                                Ngoctly94@gmail.com
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div className="social-links">

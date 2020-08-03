@@ -29,6 +29,14 @@ function Skills() {
     return (
         <div>
             <div className="skills">
+                <div className="skills-header">
+                    <div className="skills-header1">
+                        All my skills, including, but not limited to:
+                    </div>
+                    <div className="skills-header2">
+                        *Hover over to view its name*
+                    </div>
+                </div>
                 <div className="all-skill-container">
                     <div className="skill 1">
                         <img className="javascript-img" src={JavascriptImg} />
@@ -122,6 +130,11 @@ function Skills() {
                         <img className="figma-img" src={FigmaImg} />
                         <div className="tech-name"> Figma </div>
                     </div>
+                </div>
+                <div className="resume">
+                    <a href="https://ngocthily.com/resume.pdf" target="_blank" rel="noopener noreferrer">
+                        View resume
+                    </a>
                 </div>
             </div>
         </div>

@@ -91,8 +91,18 @@ function App() {
         <Skills />
       </div>
 
+      <div className="arrow" onClick={scrollToContact}>
+        V
+      </div>
+
       <div className="contact-container">
         <Contact />
+      </div>
+
+      <div className="copyright-container">
+        <div className="copyright">
+          © 2020 Ngoc Thi Ly
+        </div>
       </div>
     </div>
   );

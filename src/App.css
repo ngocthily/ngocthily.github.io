@@ -1,5 +1,6 @@
 .app {
     background-color: #A88FAC;
+    overflow: hidden;
 }
 
 .navbar-container {
@@ -39,10 +40,29 @@
     max-width: 30px;
     margin: 0 auto;
     margin-top: 50px;
+    position: relative;
+    z-index: 3;
 }
 
 .arrow:hover {
     animation: 2s shakeY infinite; 
     cursor: pointer;
     color: white;
+}
+
+.copyright-container {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    font-family: 'Archivo';
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
 }

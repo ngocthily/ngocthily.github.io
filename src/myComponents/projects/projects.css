@@ -132,3 +132,116 @@
 .projects-right-side {
     min-height: 520px;
 }
+
+@media only screen and (max-width: 1080px) {
+    .projects {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .projects-right-side {
+        margin: 0 auto;
+        margin-top: -150px;
+    }
+
+    .projects-left-side {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    .proofs-img,
+    .huddle-img,
+    .pacman-img {
+        max-width: 400px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: row;
+        min-height: 200px;
+        justify-content: center;
+        padding-top: 100px;
+    }
+
+    .projects-right-side {
+        margin: 0 auto;
+        /* margin-top: -100px; */
+        min-height: 320px;
+    }
+
+    .project1-img-container {
+        margin-top: -80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .project2-img-container {
+        margin-top: -75px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .project3-img-container {
+        margin-top: -80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .projects-left-side {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        min-height: 320px;
+    }
+
+    .project1,
+    .project2, 
+    .project3 {
+        font-size: 30px;
+        max-width: 200px;
+    }
+
+    .project1-summary,
+    .project2-summary,
+    .project3-summary {
+        margin-top: -20px;
+        text-align: center;
+        max-width: 380px;
+    }
+
+    .project1-description,
+    .project2-description,
+    .project3-description {
+        font-size: 18px;
+    }
+
+    .project1-tech,
+    .project2-tech,
+    .project3-tech {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .projects {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+    }
+
+    .projects-right-side {
+        margin: 0 auto;
+    }
+
+    .projects-left-side {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
