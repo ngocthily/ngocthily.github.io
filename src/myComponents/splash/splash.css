@@ -1,0 +1,22 @@
+.splash-top {
+    font-family: 'Archivo Black';
+    color: #A88FAC;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-size: 5rem;
+    /* max-width: 700px; */
+    max-width: 12em;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.splash-bottom {
+    font-family: 'Archivo Black';
+    color: white;
+    font-size: 55px;
+    text-align: center;
+}
+
+
