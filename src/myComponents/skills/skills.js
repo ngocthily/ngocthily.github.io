@@ -31,7 +31,7 @@ function Skills() {
             <div className="skills">
                 <div className="skills-header">
                     <div className="skills-header1">
-                        All my skills, including, but not limited to:
+                        Skills:
                     </div>
                     <div className="skills-header2">
                         *Hover over to view its name*
