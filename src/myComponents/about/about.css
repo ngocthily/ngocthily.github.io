@@ -1,0 +1,154 @@
+.about {
+    padding: 50px;
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
+}
+
+.about1 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+}
+
+.about-name {
+    margin-left: 20px;
+    position: relative;
+    color: white;
+    text-decoration: underline;
+}
+
+.about-name:hover {
+    text-decoration: underline;
+}
+
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    position: absolute;
+    max-width: 300px;
+    margin-top: 10px;
+    z-index: 3;
+    display: none;
+}
+
+.showProfile {
+    display: block;
+}
+
+.about1 {
+    font-family: 'Archivo Black';
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+
+.about3,
+.about5,
+.about7,
+.about9,
+.about11,
+.about2,
+.about4,
+.about6,
+.about8,
+.about10,
+.about12 {
+    font-family: 'Archivo Black';
+    color: #A88FAC;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-size: 40px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+
+.about1:hover,
+.about3:hover,
+.about5:hover,
+.about7:hover,
+.about9:hover,
+.about11:hover,
+.about2:hover,
+.about4:hover,
+.about6:hover,
+.about8:hover,
+.about10:hover,
+.about12:hover {
+    color: white;
+    -webkit-text-stroke-width: unset;
+    -webkit-text-stroke-color: unset;
+}
+
+.removeHighlight {
+    color: #A88FAC;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.unboldAndRemove {
+    color: #A88FAC;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-decoration: none;
+}
+
+.boldName {
+    color: white;
+    -webkit-text-stroke-width: unset;
+    -webkit-text-stroke-color: unset;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 812px) {
+    .about1 {
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+        text-align: center;
+    }
+    .profile-pic {
+        max-width: 120px;
+    }
+
+    .about2,
+    .about3,
+    .about4,
+    .about5,
+    .about6,
+    .about7,
+    .about8,
+    .about9,
+    .about10,
+    .about11,
+    .about12 {
+        text-align: center;
+        max-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .about1,
+    .about2,
+    .about3,
+    .about4,
+    .about5,
+    .about6,
+    .about7,
+    .about8,
+    .about9,
+    .about10,
+    .about11,
+    .about12 {
+        font-size: 30px;
+    }
+}
