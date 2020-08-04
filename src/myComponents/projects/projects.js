@@ -113,7 +113,7 @@ function Projects() {
                             A clone of Stack Overflow, but for mathematicans 
                         </div>
                         <div className="project1-tech">
-                            React/redux, Ruby on Rails, HTML5, CSS3
+                            React/redux, Ruby on Rails, PostgreSQL, HTML5, CSS3
                         </div>
                         <div className="project1-links">
                             <a href="https://proofs-line.herokuapp.com/" target="_blank" rel="noopener noreferrer">
