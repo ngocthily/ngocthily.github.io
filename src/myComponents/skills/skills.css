@@ -177,6 +177,7 @@
 .resume a {
     font-family: 'Archivo';
     color: white;
+    font-size: 24px;
 }
 
 @media only screen and (max-width: 414px) {
