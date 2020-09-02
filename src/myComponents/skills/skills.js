@@ -25,17 +25,19 @@ import HerokuImg from '../../images/heroku.png';
 import VscodeImg from '../../images/vscode.png';
 import FigmaImg from '../../images/figma.png';
 
+import Resume from '../../images/resume_pic.png';
+
 function Skills() {
     return (
-        <div>
+        <div className="skills-wrapper">
             <div className="skills">
                 <div className="skills-header">
-                    <div className="skills-header1">
+                    {/* <div className="skills-header1">
                         Skills:
-                    </div>
-                    <div className="skills-header2">
+                    </div> */}
+                    {/* <div className="skills-header2">
                         *Hover over to view its name*
-                    </div>
+                    </div> */}
                 </div>
                 <div className="all-skill-container">
                     <div className="skill 1">
@@ -131,11 +133,14 @@ function Skills() {
                         <div className="tech-name"> Figma </div>
                     </div>
                 </div>
-                <div className="resume">
-                    <a href="https://ngocthily.com/resume.pdf" target="_blank" rel="noopener noreferrer">
-                        View resume
-                    </a>
-                </div>
+            </div>
+            <div className="resume-wrapper">
+                <a href="https://ngocthily.com/resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <img className="resume-pic" src={Resume}/>
+                    <div className="resume">
+                        Get a print copy
+                    </div>
+                </a>
             </div>
         </div>
     )

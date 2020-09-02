@@ -1,49 +1,29 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './about.css';
 
 import ProfilePic from '../../images/profile_pic.jpg';
+import SecondPic from '../../images/portland.png';
 
 function About() {
-    function showProfileImg() {
-        var getProfilePic = document.getElementsByClassName("profile-pic");
-        (getProfilePic)[0].classList.add("showProfile");
-    }    
-
-    function hideProfileImg() {
-        var getProfilePic = document.getElementsByClassName("profile-pic");
-        (getProfilePic)[0].classList.remove("showProfile");
-    }
-
     function removeFirst() {
         var getFirstAbout = document.getElementsByClassName("about1");
-        var getAboutName = document.getElementsByClassName("about-name");
         (getFirstAbout)[0].classList.add("removeHighlight");
-        (getAboutName)[0].classList.add("unboldAndRemove");
     }
 
-    function boldName() {
-        var getAboutName = document.getElementsByClassName("about-name");
-        (getAboutName)[0].classList.add("boldName");
-    }
-    
-    function unboldName() {
-        var getAboutName = document.getElementsByClassName("about-name");
-        (getAboutName)[0].classList.remove("boldName");
-    }
-    
+    const [profilePic, setProfilePic] = useState(true);
     return (
-        <div>
+        <div className="about-wrapper">
+            <div className="profile-pic-container"
+                onMouseEnter={() => setProfilePic(false)}
+                onMouseLeave={() => setProfilePic(true)}>
+                { profilePic ?
+                <img className="profile-pic" src={ProfilePic} /> :
+                <img className="second-pic" src={SecondPic}/>
+                }
+            </div>
             <div className="about">
-                <div className="about1" onMouseEnter={boldName} onMouseLeave={unboldName}>
-                    Hello there, my name is
-                    <div className="about-name-pic-container">
-                        <div className="about-name" onMouseEnter={showProfileImg} onMouseLeave={hideProfileImg}>
-                            Ngoc Thi Ly.
-                        </div>
-                        <div className="profile-pic-container">
-                            <img className="profile-pic" src={ProfilePic}/>
-                        </div>
-                    </div>
+                <div className="about1">
+                    Hello there, my name is Ngoc Thi Ly.
                 </div>
                 <div className="about2" onMouseEnter={removeFirst}>
                     Just call me “knock”.

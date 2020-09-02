@@ -85,7 +85,7 @@
 }
 
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1400px) {
     .email-header1 {
         font-size: 40px;
     }
@@ -95,12 +95,18 @@
     }
 }
 
-/* 
-600
-414
-375 */
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 1100px) {
+    .email-header1 {
+        font-size: 40px;
+    }
+
+    .email {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
     .email-header1 {
         font-size: 40px;
     }
@@ -115,9 +121,29 @@
     }
 }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 760px) {
     .email {
-        font-size: 55px;
+        font-size: 45px;
+    }
+
+    .email-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .email-header2 {
+        text-align: center;
+    }
+
+    .social-links {
+        text-align: center;
+    }
+
+    .contact {
+        padding-top: 220px;
     }
 }
 
@@ -127,7 +153,7 @@
     }
 
     .email {
-        font-size: 45px;
+        font-size: 35px;
     }
 }
 

@@ -1,3 +1,10 @@
+.about-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .about {
     padding: 50px;
     display: flex;
@@ -12,28 +19,12 @@
     z-index: 1;
 }
 
-.about-name {
-    margin-left: 20px;
-    position: relative;
-    color: white;
-    text-decoration: underline;
-}
-
-.about-name:hover {
-    text-decoration: underline;
-}
-
-.profile-pic-container {
-    display: flex;
-    justify-content: center;
-}
-
 .profile-pic {
-    position: absolute;
     max-width: 300px;
-    margin-top: 10px;
-    z-index: 3;
-    display: none;
+}
+
+.second-pic {
+    max-width: 300px;
 }
 
 .showProfile {
@@ -47,7 +38,7 @@
     cursor: pointer;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin: 0 auto;
+    text-align: right;
 }
 
 .about3,
@@ -69,7 +60,7 @@
     cursor: pointer;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .about1:hover,
@@ -109,6 +100,43 @@
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 1400px) {
+    .about-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-pic-container {
+        padding-top: 100px;
+    }
+
+    .about {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .second-pic {
+        padding-bottom: 31px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .about1,
+    .about2,
+    .about3,
+    .about4,
+    .about5,
+    .about6,
+    .about7,
+    .about8,
+    .about9,
+    .about10,
+    .about11,
+    .about12 {
+        font-size: 30px;
+    }
+}
+
 @media only screen and (max-width: 812px) {
     .about1 {
         display: flex;
@@ -116,8 +144,14 @@
         max-width: 800px;
         text-align: center;
     }
-    .profile-pic {
-        max-width: 120px;
+
+    .profile-pic,
+    .second-pic {
+        max-width: 200px;
+    }
+
+    .second-pic {
+        padding-bottom: 21px;
     }
 
     .about2,
@@ -135,6 +169,44 @@
         max-width: 600px;
     }
 }
+
+@media only screen and (max-width: 720px) {
+    .about1,
+    .about2,
+    .about3,
+    .about4,
+    .about5,
+    .about6,
+    .about7,
+    .about8,
+    .about9,
+    .about10,
+    .about11,
+    .about12 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .about1,
+    .about2,
+    .about3,
+    .about4,
+    .about5,
+    .about6,
+    .about7,
+    .about8,
+    .about9,
+    .about10,
+    .about11,
+    .about12 {
+        font-size: 19px;
+        /* color: white;
+        -webkit-text-stroke-width: unset;
+        -webkit-text-stroke-color: unset; */
+    }
+}
+
 
 @media only screen and (max-width: 375px) {
     .about1,
